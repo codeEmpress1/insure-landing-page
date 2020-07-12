@@ -1,0 +1,125 @@
+:root {
+    /* --font-family: Karla; */
+    --bold-font: 700;
+    --normal-font: 400;
+    --heading-family: 'DM Serif Display', serif;
+    --body-family: 'Karla', sans-serif;
+
+    --dark-violet: hsl(256, 26%, 20%);
+    --gray-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--body-family);
+    width: 100%;
+    display: grid;
+    /* background-color: var(--very-light-gray); */
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+nav {
+    padding: 1rem 10% 2rem 10%;
+    background-color: var(--very-light-gray);
+}
+nav ul {
+    height: calc(100vmax - 50px);
+    background-color: var(--very-dark-violet);
+    padding-top: 2rem;
+}
+nav ul li {
+    text-align: center;
+    font-family: var(--body-family);
+    padding: 1.1rem;
+}
+
+nav ul li a {
+    color: var(--very-light-gray);
+    font-size: 1.5rem;
+}
+nav ul li a:active {
+    border: 2px solid var(--very-light-gray);
+    cursor: pointer;
+}
+nav ul img {
+    position: absolute;
+    bottom: 0;
+}
+#toggle-btn {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    border: 1px solid var(--very-dark-violet);
+    padding: .8rem;
+}
+
+.brand {
+    padding-left: 1rem;
+   font-family: 'Krona One', sans-serif;
+   font-size: 2.2rem;
+   color: var(--very-dark-violet) !important;
+}
+
+.nav-links {
+    display: none;
+}
+.active {
+    display: block;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    nav ul {
+        max-height: 3rem;
+    }
+    nav ul li {
+        background-color: var(--very-light-gray);
+        padding: 0 1.1rem;
+    }
+    nav ul li a:active {
+        border: 2px solid var(--very-dark-violet);
+        padding: 1rem;
+    }
+    #toggle-btn {
+        display: none;
+    }
+    nav ul li a {
+        color: var(--very-dark-violet);
+    }
+    nav ul img {
+        display: none;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel = "stylesheet" href = "./styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body>
+  <nav class="navbar">
+    <!-- <div class="container"> -->
+      <span class="nav-toogle" id="toggle-btn">
+        <i class="fa fa-bars"></i>
+      </span>
+      <span class="brand">INSURE</span>
+
+      <ul class="nav-links" id="nav-links">
+        <!-- <li><a href="#">HOW WE WORK</a></li> -->
+        <li><a href="#">HOW WE WORK</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">ACCOUNT</a></li>
+        <li><a href="#">VIEW PLANS</a></li>
+        <img src="./images/bg-pattern-mobile-nav.svg" alt="pattern">
+      </ul>
+    <!-- </div> -->
+  </nav>
+
+
+  <script>
+    let nav = document.getElementById('nav-links');
+    let toggleBtn = document.getElementById('toggle-btn');
+    
+    toggleBtn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
